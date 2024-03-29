@@ -1,0 +1,106 @@
+/* start footer*/
+.footer {
+  background-color: rgba($secondColor, 0.5);
+  padding: 0 30px;
+  margin-top: 50px;
+
+  .gallery {
+    width: 50%;
+
+    .section-title {
+      text-transform: capitalize;
+      color: $thirdColor;
+    }
+
+    .img-box {
+      margin-bottom: 10px;
+
+      img {
+        width: 210px;
+        height: 130px;
+      }
+
+      .text {
+        width: calc(100% - 210px);
+        margin: 0 15px;
+
+        h4 {
+          color: $mainColor;
+          text-shadow: 1px 1px 1px #000;
+          font-size: 18px;
+          margin: 10px 0 5px;
+        }
+
+        p {
+          color: $thirdColor;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+
+  .info {
+    text-transform: capitalize;
+    width: 25%;
+    color: $thirdColor;
+
+    ul {
+      line-height: 1.7;
+
+      li {
+        span {
+          color: $mainColor;
+          text-shadow: 1px 1px 1px #000;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 0px;
+    }
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  .contact {
+    text-transform: capitalize;
+    width: 25%;
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      width: 100%;
+      border: 1px solid $secondColor;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    textarea {
+      height: 140px;
+    }
+  }
+
+  .copyright {
+    text-transform: capitalize;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px solid $mainColor;
+    color: $thirdColor;
+
+    .text,
+    .auther {
+      width: 50%;
+    }
+
+    .text {}
+
+    .auther {text-align: $text-reverse;}
+  }
+}
+
+/* end footer*/

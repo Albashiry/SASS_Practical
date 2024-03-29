@@ -1,0 +1,154 @@
+/* start slider */
+.slider {
+  direction: $direction;
+
+  blockquote {
+    font: {
+      size: 20px;
+      style: italic;
+      weight: bold;
+      family: 'Courier New', Courier, monospace;
+    }
+
+    line-height: 1.7;
+    text-align: center;
+    color: $secondColor;
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .bullets {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $secondColor;
+      border-radius: 50%;
+      border: 5px solid $secondColor;
+      cursor: pointer;
+
+      &.active,
+      &:hover {
+        background-color: #FFF;
+        border: 5px solid $mainColor;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+/* end slider */
+/* start services */
+.services {
+  direction: $direction;
+
+  .service-box {
+
+    // width: (100%/3);
+    &:not(:last-of-type) {
+      padding-right: 20px;
+    }
+
+    .service-title {
+      color: $thirdColor;
+
+      i {
+        font-size: 35px;
+        position: relative;
+        top: 4px;
+      }
+
+      span {
+        margin: auto 10px;
+        text-transform: capitalize;
+      }
+    }
+
+    .service-desc {
+      color: $secondColor;
+      line-height: 1.5;
+    }
+
+    .link-more {
+      color: $mainColor;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* end services */
+/* start players */
+.players {
+  direction: $direction;
+
+  .player-box {
+
+    // width: (100%/5);
+    &:not(:last-of-type) {
+      padding-right: 10px;
+    }
+
+    .player-avatar {
+      max-width: 100%;
+    }
+
+    .player-title {
+      font-weight: normal;
+      color: $thirdColor;
+
+      span {
+        margin: auto 10px;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+
+    .player-desc {
+      color: $secondColor;
+      line-height: 1.5;
+    }
+
+    .link-more {
+      color: $mainColor;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* end players */
+/* start lorem */
+.lorem {
+  padding: 10px;
+  .lorem-box {
+    overflow: hidden;
+    width: (100%/3);
+
+    &:not(:last-of-type) {
+      margin-right: 3%;
+    }
+
+    &:hover {
+      img {
+        transition: all 0.5s;
+        transform: scale(1.1);
+        filter: brightness(50%) hue-rotate(45deg);
+      }
+    }
+
+    .lorem-img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+}
+
+/* end lorem */
