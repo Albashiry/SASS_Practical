@@ -50,9 +50,11 @@
 
   .service-box {
 
-    // width: (100%/3);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    // width: calc(100 / 3);
+    @media #{$minMedium} {
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
     }
 
     .service-title {
@@ -88,11 +90,36 @@
 .players {
   direction: $direction;
 
-  .player-box {
+  .d-flex {
+    @media #{$minSmall} {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 
-    // width: (100%/5);
-    &:not(:last-of-type) {
-      padding-right: 10px;
+  .player-box {
+    @media #{$maxSmall} {
+      text-align: center;
+      margin-bottom: 40px;
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    @media #{$minSmall} {
+      width: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:not(:last-of-type) {
+        padding-right: 10px;
+      }
+    }
+
+    @media #{$minMedium} {
+      width: 25%;
     }
 
     .player-avatar {
@@ -127,12 +154,29 @@
 /* start lorem */
 .lorem {
   padding: 10px;
-  .lorem-box {
-    overflow: hidden;
-    width: (100%/3);
 
-    &:not(:last-of-type) {
-      margin-right: 3%;
+  .d-flex {
+    @media #{$maxMobile} {
+      gap: 20px;
+    }
+
+    @media #{$minSmall} {
+      flex-direction: row;
+    }
+  }
+
+  .lorem-box {
+    @media #{$maxMobile} {
+      width: 80%;
+    }
+
+    @media #{$minSmall} {
+      overflow: hidden;
+      width: calc(100 / 3);
+
+      &:not(:last-of-type) {
+        margin-right: 3%;
+      }
     }
 
     &:hover {

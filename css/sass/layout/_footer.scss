@@ -1,16 +1,31 @@
 /* start footer*/
 .footer {
+  direction: $direction;
   background-color: rgba($secondColor, 0.5);
   padding: 0 30px;
   margin-top: 50px;
 
+
+  .d-flex {
+    @media #{$maxSmall} {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
   .gallery {
     width: 50%;
+
+    @media #{$maxSmall} {
+      width: 100%;
+    }
 
     .section-title {
       text-transform: capitalize;
       color: $thirdColor;
     }
+
+
 
     .img-box {
       margin-bottom: 10px;
@@ -18,11 +33,25 @@
       img {
         width: 210px;
         height: 130px;
+        margin-bottom: 10px;
+
+        @media #{$maxSmall} {
+          width: 30%;
+        }
+
+        @media #{$maxMobile} {
+          width: 70%;
+        }
       }
 
       .text {
         width: calc(100% - 210px);
         margin: 0 15px;
+
+        @media #{$maxSmall} {
+          width: 65%;
+        }
+
 
         h4 {
           color: $mainColor;
@@ -44,6 +73,15 @@
     text-transform: capitalize;
     width: 25%;
     color: $thirdColor;
+    padding: 0 10px;
+
+    @media #{$maxSmall} {
+      width: 50%;
+    }
+
+    @media #{$maxMobile} {
+      width: 100%;
+    }
 
     ul {
       line-height: 1.7;
@@ -69,6 +107,15 @@
   .contact {
     text-transform: capitalize;
     width: 25%;
+    padding: 0 10px;
+
+    @media #{$maxSmall} {
+      width: 50%;
+    }
+
+    @media #{$maxMobile} {
+      width: 100%;
+    }
 
     input[type='text'],
     input[type='email'],
@@ -91,15 +138,22 @@
     padding: 25px 0;
     border-top: 1px solid $mainColor;
     color: $thirdColor;
+    margin-top: 30px;
 
     .text,
     .auther {
       width: 50%;
+
+      @media #{$maxSmall} {
+        width: auto;
+      }
     }
 
     .text {}
 
-    .auther {text-align: $text-reverse;}
+    .auther {
+      text-align: $text-reverse;
+    }
   }
 }
 

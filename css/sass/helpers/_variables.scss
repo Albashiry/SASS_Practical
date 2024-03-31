@@ -1,13 +1,13 @@
-$maxMobile: 767px;
-$minSmall: 768px;
-$maxsmall: 991px;
-// $minMedium: "min-width:992px";
+$maxMobile: "(max-width: 767px)";
+$minSmall: "(min-width: 768px)";
+$maxSmall: "(max-width: 991px)";
+$minMedium: "(min-width: 992px)";
+$minLarge: "(min-width: 1200px)";
 
 $mainColor: #e2494c;
 $secondColor: #6c6c6c;
 $thirdColor: #3c3c3c;
 
-$ltr: true;
 $flex-direction: if($ltr, row, row-reverse);
 $text-align: if($ltr, left, right);
 $text-reverse: if($ltr, right, left);

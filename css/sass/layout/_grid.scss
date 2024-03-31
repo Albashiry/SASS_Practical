@@ -1,14 +1,37 @@
 .container {
-  width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+
+  @media #{$minSmall} {
+    width: 750px;
+  }
+
+  @media #{$minMedium} {
+    width: 970px;
+  }
+
+  @media #{$minLarge} {
+    width: 1170px;
+  }
 }
 
 .d-flex {
   display: flex;
-  justify-content: center;
-  flex-direction: $flex-direction;
-  // flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media #{$maxSmall} {
+    flex-direction: column;
+  }
+
+  @media #{$minMedium} {
+    flex-direction: $flex-direction;
+  }
+}
+
+.text-center-xs{
+  @media #{$maxMobile}{
+    text-align: center;
+  }
 }
