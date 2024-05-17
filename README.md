@@ -1,2 +1,2 @@
 ﻿# SASS_Practical
-# A simple web page template using SASS
+## A simple web page template using SASS principles
